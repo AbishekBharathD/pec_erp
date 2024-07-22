@@ -1,0 +1,177 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/hod-time-table.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/global.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anek Odia:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Metal:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@400&display=swap"
+    />
+
+  </head>
+  <body>
+    <div class="std-acamedic-ar">
+      <div class="statistical">STATISTICAL</div>
+      <div class="graphical">GRAPHICAL</div>
+      <header class="main">
+        <div class="main-child"></div>
+        <a class="pec-erp">PEC ERP</a>
+      
+        <div class="modules">
+          <div class="aca-nav">
+            <div class="one">
+            <div>
+              <a href="./hod-profile-page.html" class="profile">Profile</a>
+            </div>
+            <div>
+              <a href="./hod-time-table.html" class="time-table">Time Table </a>
+            </div>
+            <div>
+              <a href="./hod-academic-result-1.html" class="time-table">Academic Result</a>
+            </div>
+            <div>
+              <a href="./hod-scopus-link-1.html" class="time-table">Scopus links</a>
+            </div>
+            <div>
+              <a href="./hod-lesson-plan-1.html" class="lesson-plan">Lesson Plan</a>
+            </div>
+            <div>
+              <a href="./hod-feedback.html" class="feedback">Feedback</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="image-1"></div>
+      <main class="selection">
+        <section class="year-selection">
+          <div class="year-input">
+            <div class="year-value">
+              <div class="year-display">
+                <div class="year-display-child"></div>
+                <div class="current-year">
+                  <div class="rectangle-parent">
+                    <div class="frame-child"></div>
+                    <a class="dashboard">Dashboard</a>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="semester-selection">
+              <div class="fluentpeople-20-regular"></div>
+              <div class="dash">
+              <div class="academic-module"> <a href="#" class="profile">Academic Module</a></div>
+              <div class="attendance-module"> <a href="#" class="profile">Attendance Module</a></div>
+              
+                <div class="assignment-module"> <a href="#" class="profile">Assignment Module</a></div>
+                <div class="document-module"> <a href="#" class="profile">Document Module</a></div>
+                <div class="examination-module"> <a href="#" class="profile">Examination Module</a></div>
+               
+                <div class="communication-module"> <a href="#" class="profile">Communication Module</a></div>
+                <div class="report-module"> <a href="#" class="profile">Report Module</a></div>
+                <div class="research-module"> <a href="#" class="profile">Research Module</a></div>
+                <div class="survey-container">
+                    <div class="survey-module"> <a href="#" class="profile">Survey Module</a></div>
+              
+                </div>
+                <button><a href="login.html"><i class="fas fa-sign-out-alt">Logout</i></a></button>
+
+              </div>
+            </div>
+          </div>
+          <div class="exam-selection">
+            <div class="exam-input">
+
+                  <!-- other work-->
+                <div class="exam-input-child"></div>
+                  <div class="exam-value">
+                    <div class="exam-boundary" id="examBoundary"></div>
+                    <input
+                      class="select-year"
+                      placeholder="Select Year>"
+                      type="text"
+                    />
+
+                    <div class="exam-display">
+                      <div class="current-exam">&gt;</div>
+                    </div>
+                  </div>
+                  <div class="semester-input">
+                    <div class="semester-value">
+                      <div class="semester-value-child"></div>
+                      <div class="select-semester">Select Semester</div>
+                      <h2 class="current-semester">&gt;</h2>
+                    </div>
+                  </div>
+                  <div class="exam-input1">
+                    <div class="exam-input-item"></div>
+                    <div class="select-exam">Select Exam</div>
+                    <h2 class="current-exam1">&gt;</h2>
+                  </div>
+                  
+              
+
+                  <div class="rectangle-group">
+                    <div class="frame-inner"></div>
+                    <div class="calendar-content">
+                        <div class="calendar-content-child">
+                            <img
+                              class="calendar-icon"
+                              loading="lazy"
+                              alt=""
+                              src="{% static 'image/whatsapp-image-20240717-at-140548-63750d31-1@2x.png' %}"
+                            />
+                        </div>
+                    </div>
+                  </div>
+
+            </div>
+          </div>
+
+              <div class="year-content-wrapper">
+                <div class="year-content">
+                  <h2 class="year-dept-sec">
+                   [2022-2023] SEMESTER [2] SCHEDULE
+                  </h2>
+                  <div class="image-icon">
+                    <img
+                      class="whatsapp-image-2024-07-17-at-1"
+                      loading="lazy"
+                      alt=""
+                      src="{% static 'image/whatsapp-image-20240717-at-140548-63750d31-1@2x.png' %}"
+                    />
+                  </div>
+                </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

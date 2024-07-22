@@ -1,0 +1,5 @@
+pip install -m venv myworld
+myworld\Scripts\activate.bat
+python -m pip install Django
+django-admin startproject pec_erp
+cd pec_erp

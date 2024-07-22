@@ -1,0 +1,202 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="initial-scale=1, width=device-width" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+
+  <link rel="stylesheet" href="{% static 'css/students-academic-result2.css'%}" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek Odia:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wght@400&display=swap" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mali:wght@400&display=swap" />
+</head>
+
+<body>
+  <div class="std-acamedic-ar">
+    <div class="statistical">STATISTICAL</div>
+    <div class="graphical">GRAPHICAL</div>
+    <header class="main">
+      <div class="main-child"></div>
+      <a class="pec-erp">PEC ERP</a>
+      <div class="modules">
+        <div class="aca-nav">
+          <div class="one">
+          <div>
+            <a href="/student-login" class="profile">Profile</a>
+          </div>
+          <div>
+            <a href="/student-time-table" class="time-table">Time Table </a>
+          </div>
+          <div>
+            <a href="/students-academic-result" class="time-table">Academic Result</a>
+          </div>
+          <div>
+            <a href="/students-documents" class="time-table">Documents</a>
+          </div>
+          <div>
+            <a href="/students-certificate" class="lesson-plan">Certifications</a>
+          </div>
+          <div>
+            <a href="/students-lesson-plan" class="lesson-plan">Schedule</a>
+          </div>
+          <div>
+            <a href="/students-feed-back" class="feedback">Feedback</a>
+          </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div class="image-1"></div>
+    <main class="selection">
+      <section class="year-selection">
+        <div class="year-input">
+          <div class="year-value">
+            <div class="year-display">
+              <div class="year-display-child"></div>
+              <div class="current-year">
+                <div class="rectangle-parent">
+                  <div class="frame-child"></div>
+                  <a class="dashboard">Dashboard</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="semester-selection">
+            <div class="fluentpeople-20-regular"></div>
+            <div class="dash">
+              <div class="academic-module">
+                <a href="#" class="profile">Academic Module</a>
+              </div>
+              <div class="attendance-module">
+                <a href="#" class="profile">Attendance Module</a>
+              </div>
+              <div class="assignment-module">
+                <a href="#" class="profile">Assignment Module</a>
+              </div>
+              <div class="document-module">
+                <a href="#" class="profile">Document Module</a>
+              </div>
+              <div class="examination-module">
+                <a href="#" class="profile">Examination Module</a>
+              </div>
+              <div class="communication-module">
+                <a href="#" class="profile">Communication Module</a>
+              </div>
+              <div class="report-module">
+                <a href="#" class="profile">Report Module</a>
+              </div>
+              <div class="research-module">
+                <a href="#" class="profile">Research Module</a>
+              </div>
+              <div class="survey-container">
+                <div class="survey-module">
+                  <a href="#" class="profile">Survey Module</a>
+                </div>
+              </div>
+              <button><a href="/login"><i class="fas fa-sign-out-alt">Logout</i></a></button>
+
+            </div>
+          </div>
+        </div>
+        <div class="exam-selection">
+          <div class="exam-input">
+            <!-- other work-->
+
+            <div class="column">
+              <div class="dropdown" onclick="toggleDropdown('dropdown-content1')">
+                <span id="dropdown-label1">1st Year</span>
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-content" id="dropdown-content1">
+                  <div class="dropdown-option">2021</div>
+                  <div class="dropdown-option">2022</div>
+                  <div class="dropdown-option">2023</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="dropdown" onclick="toggleDropdown('dropdown-content2')">
+                <span id="dropdown-label2">Sem 2</span>
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-content" id="dropdown-content2">
+                  <div class="dropdown-option">1</div>
+                  <div class="dropdown-option">2</div>
+                  <div class="dropdown-option">3</div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="column">
+              <div class="dropdown" onclick="toggleDropdown('dropdown-content3')">
+                <span id="dropdown-label3">Internal-1</span>
+                <div class="dropdown-arrow"></div>
+                <div class="dropdown-content" id="dropdown-content3">
+                  <div class="dropdown-option">21MG1202</div>
+                  <div class="dropdown-option">21CS1243</div>
+                  <div class="dropdown-option">21CS1420</div>
+                </div>
+              </div>
+            </div>
+            
+
+           </div>
+           <div class="print-button">
+              <button>Print</button>
+              <button>Download</button>
+            </div>
+         
+
+       
+    </div>
+  </div>
+</div>
+
+      </section>
+
+      <!-- <div class="form-container">
+
+        <button class="submit-btn">SEARCH</button>
+      </div> -->
+    </main>
+  </div>
+
+<script>
+  function toggleDropdown(id) {
+    var dropdownContent = document.getElementById(id);
+    if (dropdownContent.style.display === "block") {
+      dropdownContent.style.display = "none";
+    } else {
+      dropdownContent.style.display = "block";
+    }
+  }
+  
+  document.addEventListener('click', function(event) {
+    var isClickInside = false;
+    var dropdowns = document.getElementsByClassName('dropdown');
+    
+    for (var i = 0; i < dropdowns.length; i++) {
+      if (dropdowns[i].contains(event.target)) {
+        isClickInside = true;
+        break;
+      }
+    }
+    
+    if (!isClickInside) {
+      var dropdownContents = document.getElementsByClassName("dropdown-content");
+      for (var i = 0; i < dropdownContents.length; i++) {
+        dropdownContents[i].style.display = "none";
+      }
+    }
+  });
+  </script>
+  
+  
+</body>
+
+</html>

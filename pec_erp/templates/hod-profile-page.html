@@ -1,0 +1,151 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/hod-profile-page.css' %}" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anek+Odia:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Metal:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anybody:wght@400&display=swap" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mali:wght@400&display=swap" />
+</head>
+<body>
+    <div class="std-acamedic-ar">
+        <div class="statistical">STATISTICAL</div>
+        <div class="graphical">GRAPHICAL</div>
+        <header class="main">
+            <div class="main-child"></div>
+            <a class="pec-erp">PEC ERP</a>
+            <div class="modules">
+              <div class="aca-nav">
+                <div class="one">
+                <div>
+                  <a href="./hod-profile-page.html" class="profile">Profile</a>
+                </div>
+                <div>
+                  <a href="./hod-time-table.html" class="time-table">Time Table </a>
+                </div>
+                <div>
+                  <a href="./hod-academic-result-1.html" class="time-table">Academic Result</a>
+                </div>
+                <div>
+                  <a href="./hod-scopus-link-1.html" class="time-table">Scopus links</a>
+                </div>
+                <div>
+                  <a href="./hod-lesson-plan-1.html" class="lesson-plan">Lesson Plan</a>
+                </div>
+                <div>
+                  <a href="./hod-feedback.html" class="feedback">Feedback</a>
+                </div>
+                </div>
+              </div>
+            </div>
+        </header>
+        <div class="image-1"></div>
+        <main class="selection">
+            <section class="year-selection">
+                <div class="year-input">
+                    <div class="year-value">
+                        <div class="year-display">
+                            <div class="year-display-child"></div>
+                            <div class="current-year">
+                                <div class="rectangle-parent">
+                                    <div class="frame-child"></div>
+                                    <a class="dashboard">Dashboard</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="semester-selection">
+                        <div class="fluentpeople-20-regular"></div>
+                        <div class="dash">
+                            <div class="academic-module"><a href="#" class="profile">Academic Module</a></div>
+                            <div class="attendance-module"><a href="#" class="profile">Attendance Module</a></div>
+                            <div class="assignment-module"><a href="#" class="profile">Assignment Module</a></div>
+                            <div class="document-module"><a href="#" class="profile">Document Module</a></div>
+                            <div class="examination-module"><a href="#" class="profile">Examination Module</a></div>
+                            <div class="communication-module"><a href="#" class="profile">Communication Module</a></div>
+                            <div class="report-module"><a href="#" class="profile">Report Module</a></div>
+                            <div class="research-module"><a href="#" class="profile">Research Module</a></div>
+                            <div class="survey-container">
+                                <div class="survey-module"><a href="#" class="profile">Survey Module</a></div>
+                            </div>
+                            <button><a href="login.html"><i class="fas fa-sign-out-alt">Logout</i></a></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="exam-selection">
+                    <div class="exam-input">
+                        <div class="container">
+
+                            <div class="div-image">
+                              <img src="{{details.photo.url}}" alt="Profile Image">
+                            </div>
+                            <div class="name-label" id="name">{{details.name}}</div>
+
+                            <div class="profile-section">
+                                <div class="profile-image">
+                                    
+                                </div>
+                                <div class="profile-details">
+                                    <div class="detail-1">
+                                        <label for="staffId">Staff Id:</label>
+                                        <input type="text" id="staffId" value={{details.staff_id}} readonly>
+                                    </div>
+                                    <div class="detail-2">
+                                        <label for="position">Position:</label>
+                                        <input type="text" id="position" value={{details.position}} readonly>
+                                    </div>
+                                    <div class="detail-3">
+                                        <label for="dept">Dept:</label><br>
+                                        <input type="text" id="dept" value={{details.dept}} readonly>
+                                    </div>
+                                    <div class="detail-4">
+                                        <label for="qualification">Qualification:</label>
+                                        <input type="text" id="qualification" value={{details.qualification}} readonly>
+                                    </div>
+                                    <div class="detail-3">
+                                      <label for="dept">PhoneNO:</label>
+                                      <input type="text" id="dept" value={{details.phone}} readonly>
+                                  </div>
+                                  
+                                    <div class="detail-6">
+                                        <label for="mailId">Mail Id:</label>
+                                        <input type="email" id="mailId" value={{details.email}} readonly>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            // Fetch data from the backend
+            fetch('/api/faculty-profile')
+                .then(response => response.json())
+                .then(data => {
+                    document.getElementById('name').textContent = data.name;
+                    document.getElementById('staffId').value = data.staffId;
+                    document.getElementById('position').value = data.position;
+                    document.getElementById('dept').value = data.dept;
+                    document.getElementById('qualification').value = data.qualification;
+                    document.getElementById('phoneNo').value = data.phoneNo;
+                    document.getElementById('mailId').value = data.mailId;
+                })
+                .catch(error => console.error('Error fetching profile data:', error));
+        });
+    </script>
+</body>
+</html>

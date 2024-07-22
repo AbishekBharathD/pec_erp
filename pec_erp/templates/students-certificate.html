@@ -1,0 +1,228 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/students-certificate.css'%}" />
+    <link rel="stylesheet" href="{% static 'css/global.css'%}"/>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anek Odia:wght@400&display=swap"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Itim:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Metal:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Mali:wght@400&display=swap"
+    />
+
+  </head>
+  <body>
+    <div class="std-acamedic-ar">
+      <div class="statistical">STATISTICAL</div>
+      <div class="graphical">GRAPHICAL</div>
+      <header class="main">
+        <div class="main-child"></div>
+        <a class="pec-erp">PEC ERP</a>
+      
+        <div class="modules">
+          <div class="aca-nav">
+            <div class="one">
+            <div>
+              <a href="/student-login" class="profile">Profile</a>
+            </div>
+            <div>
+              <a href="/student-time-table" class="time-table">Time Table </a>
+            </div>
+            <div>
+              <a href="/students-academic-result" class="time-table">Academic Result</a>
+            </div>
+            <div>
+              <a href="/students-documents" class="time-table">Documents</a>
+            </div>
+            <div>
+              <a href="/students-certificate" class="lesson-plan">Certifications</a>
+            </div>
+            <div>
+              <a href="/students-lesson-plan" class="lesson-plan">Schedule</a>
+            </div>
+            <div>
+              <a href="/students-feed-back" class="feedback">Feedback</a>
+            </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="image-1"></div>
+      <main class="selection">
+        <section class="year-selection">
+          <div class="year-input">
+            <div class="year-value">
+              <div class="year-display">
+                <div class="year-display-child"></div>
+                <div class="current-year">
+                  <div class="rectangle-parent">
+                    <div class="frame-child"></div>
+                    <a class="dashboard">Dashboard</a>
+                  </div>
+                </div>
+               
+              </div>
+            </div>
+            <div class="semester-selection">
+              <div class="fluentpeople-20-regular"></div>
+              <div class="dash">
+              <div class="academic-module"> <a href="#" class="profile">Academic Module</a></div>
+              <div class="attendance-module"> <a href="#" class="profile">Attendance Module</a></div>
+              
+                <div class="assignment-module"> <a href="#" class="profile">Assignment Module</a></div>
+                <div class="document-module"> <a href="#" class="profile">Document Module</a></div>
+                <div class="examination-module"> <a href="#" class="profile">Examination Module</a></div>
+               
+                <div class="communication-module"> <a href="#" class="profile">Communication Module</a></div>
+                <div class="report-module"> <a href="#" class="profile">Report Module</a></div>
+                <div class="research-module"> <a href=".#" class="profile">Research Module</a></div>
+                <div class="survey-container">
+                    <div class="survey-module"> <a href="#" class="profile">Survey Module</a></div>
+              
+                </div>
+                <button><a href="/login"><i class="fas fa-sign-out-alt">Logout</i></a></button>
+
+              </div>
+            </div>
+          </div>
+          <!-- /*certifaction*/ -->
+          <div class="image-14"></div>
+          <main class="certificate-container-wrapper">
+            <section class="certificate-container">
+              <div class="frame-div">
+                <div class="frame-child2"></div>
+                <div class="completion-upload-wrapper">
+                  <div class="completion-upload">
+                    <div class="upload-nested">
+                      <div class="fourth-rect" id="fourthRect"></div>
+                      <div class="upload-button">
+                        <h3 class="upload"><a href="/students-certifications-2">Upload</a></h3>
+                      </div>
+                    </div>
+                    <div class="achievement-child-wrapper">
+                      <div class="achievement-child">
+                        <div class="achievement-child-child"></div>
+                        <img
+                          class="image-4-icon"
+                          loading="lazy"
+                          alt=""
+                          src="{% static 'image/image-4@2x.png'%}"
+                        />
+    
+                        <div class="achievement-title">
+                          <div class="title-certificate-of-container">
+                            <p class="title-certificate-of-achievem">
+                              <span class="title"> Title:</span>
+                              <span class="span"> </span>
+                              <span class="certificate-of-achievement"
+                                >Certificate of Achievement
+                              </span>
+                            </p>
+                            <p class="issued-july-1">Issued: July 1, 2024 -</p>
+                            <p class="descriptionawarded-for-outst">
+                              Description:"Awarded for Outstanding Performance"
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rectangle-parent1">
+                  <div class="frame-child3"></div>
+                  <img
+                    class="image-5-icon"
+                    loading="lazy"
+                    alt=""
+                    src="{% static 'image/image-5@2x.png'%}"
+                  />
+    
+                  <div class="title-certificate-of-completi-wrapper">
+                    <div class="title-certificate-of-container1">
+                      <p class="title-certificate-of">
+                        Title: Certificate of Completion
+                      </p>
+                      <p class="issued-june-15">Issued: June 15, 2024</p>
+                      <p class="descriptionsuccessfully-comp">
+                        Description:"Successfully Completed the Training Program"
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="excellence-certificate">
+                  <div class="rectangle-parent2">
+                    <div class="frame-child4"></div>
+                    <img
+                      class="image-6-icon"
+                      loading="lazy"
+                      alt=""
+                      src="{% static 'image/image-6@2x.png'%}"
+                    />
+    
+                    <div class="title-certificate-of-excellen-wrapper">
+                      <div class="title-certificate-of-container2">
+                        <p class="title-certificate-of1">
+                          Title: Certificate of Excellence
+                        </p>
+                        <p class="issued-may-30">Issued: May 30, 2024</p>
+                        <p class="descriptionrecognized-for-ex">
+                          Description:"Recognized for Excellence in Service"
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="rectangle-parent3">
+                  <div class="frame-child5"></div>
+                  <img
+                    class="image-7-icon"
+                    loading="lazy"
+                    alt=""
+                    src="{% static 'image/image-7@2x.png'%}"
+                  />
+    
+                  <div class="title-certificate-of-distinct-wrapper">
+                    <div class="title-certificate-of-container3">
+                      <p class="title-certificate-of-distinct">
+                        <span class="title-certificate-of2"
+                          >Title: Certificate of Distinction</span
+                        >
+                        <span class="span1"> </span>
+                      </p>
+                      <p class="issued-november-18">Issued: November 18, 2023</p>
+                      <p class="descriptioncelebrated-for-re">
+                        Description:"Celebrated for Remarkable Accomplishment
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

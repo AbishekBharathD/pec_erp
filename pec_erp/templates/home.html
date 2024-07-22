@@ -1,0 +1,186 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, width=device-width" />
+
+    <link rel="stylesheet" href="{% static 'css/Home-global.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/Home.css' %}" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Kotta One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Langar:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Laila:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Aoboshi One:wght@400&display=swap"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Anybody:wght@400&display=swap"
+    />
+  </head>
+  <body>
+    <div class="landing-page">
+      <header class="rectangle-parent">
+        <div class="frame-child"></div>
+        <img
+          class="banner-icon"
+          loading="lazy"
+          alt=""
+          src="{% static 'image/rectangle-9@2x.png' %}"
+        />
+
+        <div class="college-name">
+          <h2 class="panimalar-engineering-college">
+            PANIMALAR ENGINEERING COLLEGE ERP
+          </h2>
+        </div>
+        <div class="login-wrapper">
+          <div class="login">
+            <button class="login-form">
+              <div class="login-form-child"></div>
+              <a class="contact-us">Contact us</a>
+            </button>
+            <div class="login-form1">
+              <div class="login-form-item" id="rectangle"></div>
+              <a class="login1"href="login.html">Login</a>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="landing-page-inner">
+        <div class="rectangle-group">
+          <div class="frame-item"></div>
+          <div class="frame-wrapper">
+            <div class="academics-header-parent">
+              <div class="academics-header">
+                <div class="academics-icon" id="academicsIcon"></div>
+                <div class="academics">Academics</div>
+              </div>
+              <div class="academics-header1">
+                <div class="academics-header-child" id="rectangle"></div>
+                <div class="attendance">ATTENDANCE</div>
+              </div>
+            </div>
+          </div>
+          <div class="frame-parent">
+            <div class="frame-group">
+              <div class="assignment-icon-parent">
+                <div class="assignment-icon" id="assignmentIcon"></div>
+                <div class="assignment">ASSIGNMENT</div>
+              </div>
+              <div class="document-icon-parent">
+                <div class="document-icon" id="documentIcon"></div>
+                <div class="document">DOCUMENT</div>
+              </div>
+              <div class="frame-container">
+                <div class="rectangle-container">
+                  <div class="frame-inner"></div>
+                  <div class="communication" id="cOMMUNICATIONText">
+                    COMMUNICATION
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-div">
+              <div class="survey-item-parent">
+                <div class="survey-item">
+                  <img
+                    class="survey-icon"
+                    loading="lazy"
+                    alt=""
+                    src="{% static 'image/rectangle-22@2x.png' %}"
+                  />
+                </div>
+                <div class="survey-title">
+                  <div class="survey-link" id="surveyLink"></div>
+                  <div class="survey">Survey</div>
+                </div>
+              </div>
+            </div>
+            <div class="frame-parent1">
+              <div class="rectangle-parent1">
+                <div class="rectangle-div" id="rectangle"></div>
+                <div class="examination">EXAMINATION</div>
+              </div>
+              <div class="rectangle-parent2">
+                <div class="frame-child1" id="rectangle"></div>
+                <div class="report">REPORT</div>
+              </div>
+              <div class="frame-wrapper1">
+                <div class="rectangle-parent3">
+                  <div class="frame-child2" id="rectangle"></div>
+                  <div class="research">RESEARCH</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-child"></div>
+        <div class="copyright-2024-panimalar">
+          Copyright © 2024 Panimalar Engineering College. All Rights Reserved.
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      var rectangle = document.getElementById("rectangle");
+      if (rectangle) {
+        rectangle.addEventListener("click", function (e) {
+          window.location.href = "login.html";
+        });
+      }
+
+      var academicsIcon = document.getElementById("academicsIcon");
+      if (academicsIcon) {
+        academicsIcon.addEventListener("click", function (e) {
+          window.location.href = "login.html";
+        });
+      }
+
+      var assignmentIcon = document.getElementById("assignmentIcon");
+      if (assignmentIcon) {
+        assignmentIcon.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+
+      var documentIcon = document.getElementById("documentIcon");
+      if (documentIcon) {
+        documentIcon.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+
+      var cOMMUNICATIONText = document.getElementById("cOMMUNICATIONText");
+      if (cOMMUNICATIONText) {
+        cOMMUNICATIONText.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+
+      var surveyLink = document.getElementById("surveyLink");
+      if (surveyLink) {
+        surveyLink.addEventListener("click", function (e) {
+          window.location.href = "./login.html";
+        });
+      }
+
+
+   
+  
+    </script>
+  </body>
+</html>
